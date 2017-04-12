@@ -43,6 +43,10 @@ public TreeNode UpsideDownBinaryTree(TreeNode root) {
 
 }
 
+// parent is the parent of current node , right is the right brogher of current node
+// save left child,  take right brother as left child,  save right child for next round, take parent as right child, point parent to current node, point node to left
+
+
 public TreeNode UpsideDownBinaryTreeW2(TreeNode root) {  
     TreeNode node = root, parent = null, right = null;  
     while (node != null) {  
